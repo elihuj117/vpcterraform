@@ -1,5 +1,5 @@
 resource "aws_lb" "elb" {
-  name = "tf-elb"
+  name = "elb"
   internal = "false"
   load_balancer_type = "application"
   security_groups = [aws_security_group.lab_access.id]
@@ -7,7 +7,7 @@ resource "aws_lb" "elb" {
 }
 
 resource "aws_lb_target_group" "asg-elb" {
-  name = "tf-elb-tg"
+  name = "elb-tg"
   port = 8080
   protocol = "HTTP"
   vpc_id = aws_vpc.vpc01.id
