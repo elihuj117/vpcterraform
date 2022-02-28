@@ -1,5 +1,7 @@
 # Deploying a VPC with Terraform
 
+![alt text](https://ibb.co/ykXjLLT)
+
 ### Terraform
 This is a fairly straightforward Terraform project to deploy a VPC, and some associated components within an AWS enviornment. I've configured the variables to where you can change the aws_region easily, and it will be included in the name of the created resources. Example: vpc01.us-east-1.aws.lab.local. 
 
